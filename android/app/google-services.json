@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "400861331451",
+    "project_id": "exaiiamcl",
+    "storage_bucket": "exaiiamcl.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400861331451:android:a2c20944a4517074a7955e",
+        "android_client_info": {
+          "package_name": "com.example.exaiiamcl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRzt6DKGbBFh7THTAHOg7HBOD5pt_YP2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
