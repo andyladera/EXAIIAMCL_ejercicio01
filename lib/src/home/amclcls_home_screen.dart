@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:exaiiamcl/src/auth/amclcls_auth_service.dart';
 import 'package:exaiiamcl/src/profile/screens/amclcls_user_profile_screen.dart';
 import 'package:exaiiamcl/src/profile/screens/amclcls_health_profile_screen.dart';
+import '../symptom_tracking/amclcls_symptom_tracking_screen.dart';
+import '../medication_management/amclcls_medication_management_screen.dart';
+import '../medical_agenda/amclcls_medical_agenda_screen.dart';
 
 class AMCLCLSHomeScreen extends StatelessWidget {
   final AMCLCLSAuthService _authService = AMCLCLSAuthService();
@@ -47,6 +50,36 @@ class AMCLCLSHomeScreen extends StatelessWidget {
                 );
               },
               child: const Text('Ver Perfil de Salud'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AMCLCLSSymptomTrackingScreen()),
+                );
+              },
+              child: const Text('Seguimiento de Síntomas'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AMCLCLSMedicationManagementScreen()),
+                );
+              },
+              child: const Text('Gestión de Medicamentos'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const AMCLCLSMedicalAgendaScreen()),
+                );
+              },
+              child: const Text('Agenda Médica'),
             ),
           ],
         ),
